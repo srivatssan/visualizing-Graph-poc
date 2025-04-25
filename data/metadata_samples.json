@@ -1,1 +1,12 @@
-
+[
+  {"service_name": "auth", "runtime_env": "python", "database": "postgres", "logging_level": "debug"},
+  {"service_name": "payment", "runtime_env": "java", "database": "postgres", "logging_level": "info"},
+  {"service_name": "search", "runtime_env": "python", "database": "mongodb", "logging_level": "debug"},
+  {"service_name": "report", "runtime_env": "node", "database": "mongodb", "logging_level": "warn"},
+  {"service_name": "billing", "runtime_env": "python", "database": "postgres", "logging_level": "info"},
+  {"service_name": "notifications", "runtime_env": "java", "database": "mysql", "logging_level": "debug"},
+  {"service_name": "user", "runtime_env": "node", "database": "mysql", "logging_level": "debug"},
+  {"service_name": "analytics", "runtime_env": "java", "database": "postgres", "logging_level": "warn"},
+  {"service_name": "support", "runtime_env": "python", "database": "mysql", "logging_level": "debug"},
+  {"service_name": "feedback", "runtime_env": "node", "database": "postgres", "logging_level": "info"}
+]
