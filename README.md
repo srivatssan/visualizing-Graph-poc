@@ -10,6 +10,7 @@ Identify shared configuration properties across different services
 Generate graph-based insights into architectural commonalities
 For example, analyzing metadata from 10 microservices to show which services share the same database, runtime environment, or logging level.
 
+```
 **📁 Project Structure**
 
 json_bigraph_project/
@@ -31,7 +32,7 @@ json_bigraph_project/
 ├── run.py                             # Main entry point
 ├── requirements.txt                   # Python dependencies
 └── README.md                          # Project documentation
-
+```
 💠 Installation Instructions
 
 1. Clone the repository
