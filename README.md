@@ -109,7 +109,7 @@ Srivatssan Srinivasan
 
 **🛡️ License**
 
-This project is proprietary and intended for internal enterprise use. Please contact the author for licensing options.
+This project is free for anyone to use.
 
 **📣 Citation / Credit**
 
