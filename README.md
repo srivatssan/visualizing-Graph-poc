@@ -37,8 +37,8 @@ json_bigraph_project/
 
 1. Clone the repository
 ```
-git clone https://github.com/your-org/json-bigraph-visualizer.git
-cd json-bigraph-visualizer
+git clone git@github.com:srivatssan/visualizing-Graph-poc.git
+cd visualizing-Graph-poc
 ```
 2. Set up Python environment
 ```
