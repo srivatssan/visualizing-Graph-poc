@@ -51,10 +51,10 @@ pip install -r requirements.txt
 python run.py
 ```
 Output:
-
+```
 output/bigraph.json — Graph data
 output/bigraph.html — Interactive HTML visualization
-
+```
 🌐** Visualize the Graph**
 
 Due to browser security restrictions, run a local server:
