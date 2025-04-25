@@ -36,20 +36,20 @@ json_bigraph_project/
 💠 Installation Instructions
 
 1. Clone the repository
-
+```
 git clone https://github.com/your-org/json-bigraph-visualizer.git
 cd json-bigraph-visualizer
-
+```
 2. Set up Python environment
-
+```
 python3 -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
-
+```
 3. Run the application
-
+```
 python run.py
-
+```
 Output:
 
 output/bigraph.json — Graph data
@@ -58,13 +58,14 @@ output/bigraph.html — Interactive HTML visualization
 🌐** Visualize the Graph**
 
 Due to browser security restrictions, run a local server:
-
+```
 cd output
 python -m http.server 8000
-
+```
 Then open in browser:
+```
 http://localhost:8000/bigraph.html
-
+```
 ✅ Interactive, zoomable, draggable graph rendered using D3.js
 
 📊 **Features**
@@ -76,14 +77,14 @@ http://localhost:8000/bigraph.html
 ⚙️ Enterprise-ready modular Python architecture
 
 📚** Example Metadata Input**
-
+```
 {
   "service_name": "auth",
   "runtime_env": "python",
   "database": "postgres",
   "logging_level": "debug"
 }
-
+```
 🧹 **Customization**
 
 Modify metadata_samples.json in /data to reflect your domain
@@ -97,9 +98,9 @@ jinja2 – HTML templating engine
 D3.js – JavaScript visualization (v7)
 
 **Install via:**
-
+```
 pip install -r requirements.txt
-
+```
 📌 Roadmap
 
 👨‍💼 Maintainers
