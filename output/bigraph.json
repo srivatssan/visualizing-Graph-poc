@@ -1,0 +1,214 @@
+{
+    "directed": false,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "type": "service",
+            "id": "auth"
+        },
+        {
+            "type": "property",
+            "label": "runtime_env",
+            "id": "runtime_env:python"
+        },
+        {
+            "type": "property",
+            "label": "database",
+            "id": "database:postgres"
+        },
+        {
+            "type": "property",
+            "label": "logging_level",
+            "id": "logging_level:debug"
+        },
+        {
+            "type": "service",
+            "id": "payment"
+        },
+        {
+            "type": "property",
+            "label": "runtime_env",
+            "id": "runtime_env:java"
+        },
+        {
+            "type": "property",
+            "label": "logging_level",
+            "id": "logging_level:info"
+        },
+        {
+            "type": "service",
+            "id": "search"
+        },
+        {
+            "type": "property",
+            "label": "database",
+            "id": "database:mongodb"
+        },
+        {
+            "type": "service",
+            "id": "report"
+        },
+        {
+            "type": "property",
+            "label": "runtime_env",
+            "id": "runtime_env:node"
+        },
+        {
+            "type": "property",
+            "label": "logging_level",
+            "id": "logging_level:warn"
+        },
+        {
+            "type": "service",
+            "id": "billing"
+        },
+        {
+            "type": "service",
+            "id": "notifications"
+        },
+        {
+            "type": "property",
+            "label": "database",
+            "id": "database:mysql"
+        },
+        {
+            "type": "service",
+            "id": "user"
+        },
+        {
+            "type": "service",
+            "id": "analytics"
+        },
+        {
+            "type": "service",
+            "id": "support"
+        },
+        {
+            "type": "service",
+            "id": "feedback"
+        }
+    ],
+    "links": [
+        {
+            "source": "auth",
+            "target": "runtime_env:python"
+        },
+        {
+            "source": "auth",
+            "target": "database:postgres"
+        },
+        {
+            "source": "auth",
+            "target": "logging_level:debug"
+        },
+        {
+            "source": "runtime_env:python",
+            "target": "search"
+        },
+        {
+            "source": "runtime_env:python",
+            "target": "billing"
+        },
+        {
+            "source": "runtime_env:python",
+            "target": "support"
+        },
+        {
+            "source": "database:postgres",
+            "target": "payment"
+        },
+        {
+            "source": "database:postgres",
+            "target": "billing"
+        },
+        {
+            "source": "database:postgres",
+            "target": "analytics"
+        },
+        {
+            "source": "database:postgres",
+            "target": "feedback"
+        },
+        {
+            "source": "logging_level:debug",
+            "target": "search"
+        },
+        {
+            "source": "logging_level:debug",
+            "target": "notifications"
+        },
+        {
+            "source": "logging_level:debug",
+            "target": "user"
+        },
+        {
+            "source": "logging_level:debug",
+            "target": "support"
+        },
+        {
+            "source": "payment",
+            "target": "runtime_env:java"
+        },
+        {
+            "source": "payment",
+            "target": "logging_level:info"
+        },
+        {
+            "source": "runtime_env:java",
+            "target": "notifications"
+        },
+        {
+            "source": "runtime_env:java",
+            "target": "analytics"
+        },
+        {
+            "source": "logging_level:info",
+            "target": "billing"
+        },
+        {
+            "source": "logging_level:info",
+            "target": "feedback"
+        },
+        {
+            "source": "search",
+            "target": "database:mongodb"
+        },
+        {
+            "source": "database:mongodb",
+            "target": "report"
+        },
+        {
+            "source": "report",
+            "target": "runtime_env:node"
+        },
+        {
+            "source": "report",
+            "target": "logging_level:warn"
+        },
+        {
+            "source": "runtime_env:node",
+            "target": "user"
+        },
+        {
+            "source": "runtime_env:node",
+            "target": "feedback"
+        },
+        {
+            "source": "logging_level:warn",
+            "target": "analytics"
+        },
+        {
+            "source": "notifications",
+            "target": "database:mysql"
+        },
+        {
+            "source": "database:mysql",
+            "target": "user"
+        },
+        {
+            "source": "database:mysql",
+            "target": "support"
+        }
+    ]
+}
